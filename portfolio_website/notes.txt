@@ -17,3 +17,14 @@ npx create-react-app frontend_react.
 delete the default src and create own src, create index.js, App.js and index.css
 install the dependencies using the command:
  npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons
+src folder Structure
+src
+  >assets     // all the media files
+  >components // react components
+  >constants  //all the imports
+  >containter //components contatining child components
+Create the container component Folders within container Folder
+we can export all the components from container folder at once by putting them in an index.js file within container folder, and exporting them from there
+import { About, Testimonial, Footer, Header, Work, Skills } from "./container";
+we can import them by  using the above import statement
+llly we can import components also from components folder using the index.js file and exporting them

@@ -1,0 +1,19 @@
+Project Folder Structure:
+Portfolio_website.. 
+                  backend_Sanity..// here install sanilty 
+                  ->npm install sanilty -g @sanity/cli  
+                  ->sanity init// to start sanity cli
+                  -> setup the project as u like.
+                  ->sanity start// to start the sanity studio in the local host
+
+
+//now setup the schema
+go to schema folder in backend_Sanity folder, and create a .js file, ex:testimonials.js
+after the particular schema is written, import that js file in schema.js and include the schema in the types array
+once the required schemas are written, we are done with the backend setup
+
+//now setup the frontend
+npx create-react-app frontend_react.
+delete the default src and create own src, create index.js, App.js and index.css
+install the dependencies using the command:
+ npm install @sanity/client @sanity/image-url framer-motion node-sass react-icons
